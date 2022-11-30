@@ -1,25 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Requirements
 
-Things you may want to cover:
+* Ruby version: `2.7.6`
+* Database: `Sqlite3`
+* Rails: `7.0.3`
 
-* Ruby version
-	`2.7.6`
+# How to run the project
 
-* System dependencies
-	Database: `Sqlite3`
-	Rails: `7.0.3`
+* bundle install
+* rake db:create
+* rake db:migrate
+* rake db:seed
+* rails s
 
-* Database creation
-	`rails db:create`
 
-* Database initialization
-	`rails db:migrate`
-	`rails db:seed`
-
-* How to run the test suite
+# How to run the test suite
+	I used minitest for the item and order tests, You can use following command to execute the tests
 	`rails test`
-
-	I used minitest to write unit tests for item and order
