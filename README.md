@@ -16,5 +16,6 @@
 
 
 # How to run the test suite
-	I used minitest for the item and order tests, You can use following command to execute the tests
-	`rails test`
+	
+I used minitest for the item and order tests, You can use following command to execute the tests
+* `rails test`
