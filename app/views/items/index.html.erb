@@ -1,0 +1,26 @@
+
+<%= form_with url: "/orders", method: :post do |form| %>
+
+	<h1>Here all the Items</h1>
+
+	<table>
+		<tr>
+			<th> Name &emsp;</th>
+			<th> &emsp; Type &emsp;</th>
+			<th> &emsp; Tax Rate &emsp;</th>
+			<th> &emsp; Amount &emsp;</th>
+			<th> &emsp; Status </th>
+		</tr>
+		<% @items.each do |item| %>
+		<tr>
+			<td><%= item.name %> &emsp;</td>
+	        <td>&emsp; <%= item.type %>&emsp;</td>
+	        <td>&emsp; <%= item.tax_rate %>&emsp;</td>
+	        <td>&emsp; <%= item.amount %>&emsp;</td>
+	        <td>&emsp; <%= item.status %>&emsp;</td>
+		</tr>
+		<% end %>
+
+	</table>
+
+<% end %>

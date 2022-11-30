@@ -1,0 +1,15 @@
+Item.find_or_create_by(name: 'Sandwich', type: '', tax_rate: 8, amount: 20, status: 'available')
+Item.find_or_create_by(name: 'Tea', type: '', tax_rate: 3, amount: 12, status: 'available')
+Item.find_or_create_by(name: 'Burger', type: '', tax_rate: 10, amount: 50, status: 'available')
+Item.find_or_create_by(name: 'Coffee', type: '', tax_rate: 5, amount: 20, status: 'available')
+Item.find_or_create_by(name: 'Pizza', type: '', tax_rate: 15, amount: 100, status: 'available')
+Item.find_or_create_by(name: 'Brownie', type: '', tax_rate: 5, amount: 45, status: 'available')
+
+Discount.find_or_create_by(discount_amount: 6, discount_percentage: nil, bundled_discount_id: nil, discounted_item_id: 1)
+Discount.find_or_create_by(discount_amount: nil, discount_percentage: 5, bundled_discount_id: nil, discounted_item_id: 1)
+Discount.find_or_create_by(discount_amount: 5, discount_percentage: 10, bundled_discount_id: nil, discounted_item_id: 2)
+Discount.find_or_create_by(discount_amount: 10, discount_percentage: nil, bundled_discount_id: 1, discounted_item_id: 3)
+Discount.find_or_create_by(discount_amount: nil, discount_percentage: 10, bundled_discount_id: 1, discounted_item_id: 2)
+Discount.find_or_create_by(discount_amount: 10, discount_percentage: 5, bundled_discount_id: 2, discounted_item_id: 4)
+Discount.find_or_create_by(discount_amount: 5, discount_percentage: nil, bundled_discount_id: 2, discounted_item_id: 3)
+
