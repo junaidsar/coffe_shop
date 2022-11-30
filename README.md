@@ -6,19 +6,20 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+	`2.7.6`
 
 * System dependencies
-
-* Configuration
+	Database: `Sqlite3`
+	Rails: `7.0.3`
 
 * Database creation
+	`rails db:create`
 
 * Database initialization
+	`rails db:migrate`
+	`rails db:seed`
 
 * How to run the test suite
+	`rails test`
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+	I used minitest to write unit tests for item and order
